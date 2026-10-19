@@ -3,7 +3,7 @@
 #include "real.h"
 #include "subband.h"
 #ifdef MULTITHREADED
-#include <pthread.h>
+#include "sbsms_pthread.h"
 #endif
 #include <stdlib.h>
 #include <string.h>

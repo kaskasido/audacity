@@ -4,7 +4,7 @@
 
 #include "config.h"
 #ifdef MULTITHREADED
-#include "pthread.h"
+#include "sbsms_pthread.h"
 #endif
 #include "sbsms.h"
 #include "track.h"

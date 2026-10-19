@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include "config.h"
 #ifdef MULTITHREADED
-#include "pthread.h"
+#include "sbsms_pthread.h"
 #endif
 
 namespace _sbsms_ {

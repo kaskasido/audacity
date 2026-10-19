@@ -35,6 +35,10 @@ set( OPTIONS
 find_package( Threads )
 if( Threads_FOUND AND CMAKE_USE_PTHREADS_INIT )
    set( MULTITHREADED 1 )
+elseif( WIN32 )
+   # Kein pthreads unter MSVC: sbsms_pthread.h bildet die benutzten
+   # pthread-Aufrufe mit std::thread/std::mutex/std::condition_variable nach.
+   set( MULTITHREADED 1 )
 endif()
 
 if(NOT APPLE OR MACOS_ARCHITECTURE STREQUAL "x86_64")

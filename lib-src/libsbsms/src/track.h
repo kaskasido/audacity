@@ -6,7 +6,7 @@
 #include "config.h"
 
 #ifdef MULTITHREADED
-#include "pthread.h"
+#include "sbsms_pthread.h"
 #endif
 
 #include <vector>
